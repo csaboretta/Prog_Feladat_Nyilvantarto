@@ -24,6 +24,21 @@ namespace Feladatnyilvantarto
         {
             InitializeComponent();
         }
+        List<CheckBox> feladatok = new List<CheckBox>();
 
+
+        private void hozzaadGomb_Click(object sender, RoutedEventArgs e)
+        {
+            CheckBox uj = new CheckBox();
+
+            uj.Content = szovegTb.Text;
+
+            feladatok.Add(uj);
+
+            feladatokLb.ItemsSource = feladatok;
+
+            feladatokLb.Items.Refresh();
+
+        }
     }
 }
