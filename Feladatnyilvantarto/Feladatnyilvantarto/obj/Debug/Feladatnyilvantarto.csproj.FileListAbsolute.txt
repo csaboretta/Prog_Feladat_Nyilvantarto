@@ -1,0 +1,15 @@
+F:\code\Feladatnyilvantarto\Feladatnyilvantarto\obj\Debug\Feladatnyilvantarto.csprojAssemblyReference.cache
+F:\code\Feladatnyilvantarto\Feladatnyilvantarto\obj\Debug\MainWindow.g.cs
+F:\code\Feladatnyilvantarto\Feladatnyilvantarto\obj\Debug\App.g.cs
+F:\code\Feladatnyilvantarto\Feladatnyilvantarto\obj\Debug\Feladatnyilvantarto_MarkupCompile.cache
+F:\code\Feladatnyilvantarto\Feladatnyilvantarto\obj\Debug\Feladatnyilvantarto_MarkupCompile.lref
+F:\code\Feladatnyilvantarto\Feladatnyilvantarto\bin\Debug\Feladatnyilvantarto.exe.config
+F:\code\Feladatnyilvantarto\Feladatnyilvantarto\bin\Debug\Feladatnyilvantarto.exe
+F:\code\Feladatnyilvantarto\Feladatnyilvantarto\bin\Debug\Feladatnyilvantarto.pdb
+F:\code\Feladatnyilvantarto\Feladatnyilvantarto\obj\Debug\MainWindow.baml
+F:\code\Feladatnyilvantarto\Feladatnyilvantarto\obj\Debug\Feladatnyilvantarto.g.resources
+F:\code\Feladatnyilvantarto\Feladatnyilvantarto\obj\Debug\Feladatnyilvantarto.Properties.Resources.resources
+F:\code\Feladatnyilvantarto\Feladatnyilvantarto\obj\Debug\Feladatnyilvantarto.csproj.GenerateResource.cache
+F:\code\Feladatnyilvantarto\Feladatnyilvantarto\obj\Debug\Feladatnyilvantarto.csproj.CoreCompileInputs.cache
+F:\code\Feladatnyilvantarto\Feladatnyilvantarto\obj\Debug\Feladatnyilvantarto.exe
+F:\code\Feladatnyilvantarto\Feladatnyilvantarto\obj\Debug\Feladatnyilvantarto.pdb

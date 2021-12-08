@@ -1,0 +1,23 @@
+﻿<Window x:Class="Feladatnyilvantarto.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Feladatnyilvantarto"
+        mc:Ignorable="d"
+        Title="Csaboretta feladatnyilvántartója" Height="596.329" Width="677">
+    <Grid Margin="0,0,2,1">
+        <ListBox Name="feladatokLb" HorizontalAlignment="Left" Height="227" Margin="10,43,0,0" VerticalAlignment="Top" Width="419"/>
+        <Label Content="Feladatok listája" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="183" FontSize="16" FontWeight="Bold" FontFamily="Courier New"/>
+        <ListBox Name="toroltLb" HorizontalAlignment="Left" Height="227" Margin="10,320,0,0" VerticalAlignment="Top" Width="419"/>
+        <Label Content="Törölt Elemek" HorizontalAlignment="Left" Margin="10,287,0,0" VerticalAlignment="Top" FontFamily="Courier New" FontSize="16" Width="183" FontWeight="Bold"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="434,43,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="184" FontFamily="Courier New" FontWeight="Bold" FontSize="16"/>
+        <Label Content="Feladat szövege:" HorizontalAlignment="Left" Margin="434,10,0,0" VerticalAlignment="Top" FontFamily="Courier New" FontSize="16" Width="183" FontWeight="Bold"/>
+        <Button Content="+" Name="hozzaadGomb" HorizontalAlignment="Left" Margin="625,44,0,0" VerticalAlignment="Top" Width="33" FontFamily="Courier New" FontWeight="Bold" FontSize="14"/>
+        <Button Content="Módosítás" Name="modositGomb" HorizontalAlignment="Left" Margin="434,71,0,0" VerticalAlignment="Top" Width="183" FontFamily="Courier New" Height="20" FontSize="14"/>
+        <Button Content="Törlés" Name="torolGomb" HorizontalAlignment="Left" Margin="434,96,0,0" VerticalAlignment="Top" Width="183" FontFamily="Courier New" FontSize="14"/>
+        <Button Content="Visszaállítás" Name="viszallitGomb" HorizontalAlignment="Left" Margin="434,320,0,0" VerticalAlignment="Top" Width="184" FontFamily="Courier New" FontSize="14"/>
+        <Button Content="Végleges törlés" Name="vegtorolGomb" HorizontalAlignment="Left" Margin="434,345,0,0" VerticalAlignment="Top" Width="183" FontFamily="Courier New" FontSize="14"/>
+
+    </Grid>
+</Window>
