@@ -29,16 +29,36 @@ namespace Feladatnyilvantarto
 
         private void hozzaadGomb_Click(object sender, RoutedEventArgs e)
         {
-            CheckBox uj = new CheckBox();
-
-            uj.Content = szovegTb.Text;
-
-            feladatok.Add(uj);
-
             feladatokLb.ItemsSource = feladatok;
-
-            feladatokLb.Items.Refresh();
+            UjCheckBox();
 
         }
+        private  void UjCheckBox()
+        {
+            CheckBox uj = new CheckBox();
+            uj.IsChecked = false;
+            uj.Content = szovegTb.Text;
+            feladatok.Add(uj);
+            uj.Checked += new RoutedEventHandler(Szinezes);
+            uj.Unchecked += new RoutedEventHandler(Szinezes);
+            feladatokLb.Items.Refresh();
+        }
+
+        public void Szinezes(object sender, RoutedEventArgs e)
+        {
+            CheckBox box = (CheckBox)sender;
+            if (box.IsChecked == true)
+            {
+                box.FontStyle = FontStyles.Italic;
+                box.Foreground = Brushes.Gray;
+            }
+            else
+            {
+                box.FontStyle = FontStyles.Normal;
+                box.Foreground = Brushes.Black;
+            }
+        }
+
+       
     }
 }
