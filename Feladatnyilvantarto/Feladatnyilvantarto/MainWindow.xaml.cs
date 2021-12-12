@@ -24,8 +24,9 @@ namespace Feladatnyilvantarto
         {
             InitializeComponent();
         }
-        List<CheckBox> feladatok = new List<CheckBox>();
-       
+        List<object> feladatok = new List<object>();
+        List<object> toroltElemek = new List<object>();
+
         private void hozzaadGomb_Click(object sender, RoutedEventArgs e)
         {
             feladatokLb.ItemsSource = feladatok;
@@ -58,9 +59,9 @@ namespace Feladatnyilvantarto
             }
         }
 
-        private void torolGomb_Click(object sender, RoutedEventArgs e)
+        public void torolGomb_Click(object sender, RoutedEventArgs e)
         {
-            List<object> toroltElemek = new List<object>();
+            
             int torlesIndex = feladatokLb.SelectedIndex;
             toroltElemek.Add(feladatokLb.SelectedItem);
             feladatok.RemoveAt(torlesIndex);
@@ -69,5 +70,20 @@ namespace Feladatnyilvantarto
             feladatokLb.Items.Refresh();
         }
 
+        public void viszallitGomb_Click(object sender, RoutedEventArgs e)
+        {
+            int visszaIndex = toroltLb.SelectedIndex;
+            feladatok.Add(toroltLb.SelectedItem);
+            toroltElemek.RemoveAt(visszaIndex);
+            toroltLb.Items.Refresh();
+            feladatokLb.Items.Refresh();
+        }
+
+        private void vegtorolGomb_Click(object sender, RoutedEventArgs e)
+        {
+            int veglegTorolIndex = toroltLb.SelectedIndex;
+            toroltElemek.RemoveAt(veglegTorolIndex);
+            toroltLb.Items.Refresh();
+        }
     }
 }
