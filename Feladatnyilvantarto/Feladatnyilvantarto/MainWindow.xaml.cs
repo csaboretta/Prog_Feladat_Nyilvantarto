@@ -25,13 +25,12 @@ namespace Feladatnyilvantarto
             InitializeComponent();
         }
         List<CheckBox> feladatok = new List<CheckBox>();
-
-
+       
         private void hozzaadGomb_Click(object sender, RoutedEventArgs e)
         {
             feladatokLb.ItemsSource = feladatok;
             UjCheckBox();
-
+            
         }
         private  void UjCheckBox()
         {
@@ -59,6 +58,16 @@ namespace Feladatnyilvantarto
             }
         }
 
-       
+        private void torolGomb_Click(object sender, RoutedEventArgs e)
+        {
+            List<object> toroltElemek = new List<object>();
+            int torlesIndex = feladatokLb.SelectedIndex;
+            toroltElemek.Add(feladatokLb.SelectedItem);
+            feladatok.RemoveAt(torlesIndex);
+            toroltLb.ItemsSource = toroltElemek;
+            toroltLb.Items.Refresh();
+            feladatokLb.Items.Refresh();
+        }
+
     }
 }

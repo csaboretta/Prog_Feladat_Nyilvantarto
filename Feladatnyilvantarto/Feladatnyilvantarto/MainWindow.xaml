@@ -15,8 +15,8 @@
         <Label Content="Feladat szövege:" HorizontalAlignment="Left" Margin="434,10,0,0" VerticalAlignment="Top" FontFamily="Courier New" FontSize="16" Width="183" FontWeight="Bold"/>
         <Button Content="+" Name="hozzaadGomb" HorizontalAlignment="Left" Margin="625,44,0,0" VerticalAlignment="Top" Width="33" FontFamily="Courier New" FontWeight="Bold" FontSize="14" Click="hozzaadGomb_Click"/>
         <Button Content="Módosítás" Name="modositGomb" HorizontalAlignment="Left" Margin="434,71,0,0" VerticalAlignment="Top" Width="183" FontFamily="Courier New" Height="20" FontSize="14"/>
-        <Button Content="Törlés" Name="torolGomb" HorizontalAlignment="Left" Margin="434,96,0,0" VerticalAlignment="Top" Width="183" FontFamily="Courier New" FontSize="14"/>
-        <Button Content="Visszaállítás" Name="viszallitGomb" HorizontalAlignment="Left" Margin="434,320,0,0" VerticalAlignment="Top" Width="184" FontFamily="Courier New" FontSize="14"/>
+        <Button Content="Törlés" Name="torolGomb" HorizontalAlignment="Left" Margin="434,96,0,0" VerticalAlignment="Top" Width="183" FontFamily="Courier New" FontSize="14" Click="torolGomb_Click"/>
+        <Button Content="Visszaállítás" Name="viszallitGomb" HorizontalAlignment="Left" Margin="434,320,0,0" VerticalAlignment="Top" Width="184" FontFamily="Courier New" FontSize="14" Click="viszallitGomb_Click"/>
         <Button Content="Végleges törlés" Name="vegtorolGomb" HorizontalAlignment="Left" Margin="434,345,0,0" VerticalAlignment="Top" Width="183" FontFamily="Courier New" FontSize="14"/>
 
     </Grid>
